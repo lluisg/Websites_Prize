@@ -1,0 +1,100 @@
+:root{
+  --l1: 1000px;
+  --top_btn_move: 50%;
+  --left_btn_move: 50%;
+  --background_btn: white;
+  --color_btn: black;
+}
+
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html, body{
+  height: 100%;
+}
+
+h1{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h2{
+  text-align: center;
+}
+
+/* buttons ----------------------------------------------- */
+
+.btn{
+  position: absolute;
+  height: 50px;
+  width: 120px;
+  font-weight: bold;
+}
+
+.btn1{
+  background-color: var(--bcolor1);
+}
+.btn2{
+  background-color: var(--bcolor2);
+}
+.btn3{
+  background-color: var(--bcolor3);
+}
+.btn4{
+  background-color: var(--bcolor4);
+}
+.btn5{
+  background-color: var(--bcolor5);
+}
+.btn6{
+  background-color: var(--bcolor6);
+}
+.btn7{
+  background-color: var(--bcolor7);
+}
+.btn8{
+  background-color: var(--bcolor8);
+}
+
+.blocked{
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+
+/* SURRENDER BUTTON --------------------------------- */
+
+.btn_surr{
+  height: 50px;
+  width: 120px;
+  font-weight: bold;
+  background-color: var(--background_btn);
+  color: var(--color_btn);
+}
+
+
+#surr{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.btn_surr:hover{
+  cursor:pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
